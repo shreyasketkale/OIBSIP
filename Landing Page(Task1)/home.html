@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Benders!!!</title>
+  </head>
+  <link rel="stylesheet" href="main.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Style reset */
+    body {
+      font-family: "Cabin", sans-serif;
+      margin: 0px;
+      padding: 0px;
+      /* background: url("img/wallpaperflare.com_wallpaper\ \(4\).jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; */
+      background-image: radial-gradient(
+        circle,
+        #050709,
+        #111416,
+        #191d20,
+        #21262a,
+        #292f34
+      );
+      color: white;
+      text-decoration: none !important;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 2rem;
+      align-items: center;
+    }
+
+    .section1 {
+      background: url("img/wallpaperflare.com_wallpaper\ \(4\).jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+    a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+    a:hover {
+      color: rgb(185, 228, 223);
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+    }
+    .centre ul li {
+      margin: 0 2rem;
+    }
+    .left {
+      display: flex;
+      flex-direction: row;
+    }
+    .left img {
+      width: 7rem;
+      filter: invert(100%);
+      mix-blend-mode: color-dodge;
+    }
+    .left div {
+      margin: auto;
+    }
+
+    .btn {
+      font-family: "Cabin", sans-serif;
+      margin: 25px 24px;
+      padding: 11px 26px;
+      background-color: black;
+      color: white;
+      border: 2px solid grey;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: rgb(62, 58, 58);
+    }
+    .container {
+      /* border: 2px solid #efeded; */
+      position: absolute;
+      margin: 110px 14px;
+      padding: 36px;
+      width: 30%;
+      /* border-radius: 20px; */
+    }
+
+    .form-group input {
+      text-align: center;
+      display: block;
+      width: 225px;
+      padding: 10px;
+      border: 2px solid grey;
+      margin: 2px auto;
+      border-radius: 14px;
+    }
+    .navbar li {
+      list-style: none;
+      /* margin: 0px 12px; */
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    .container button {
+      margin: auto;
+      display: block;
+      width: 95px;
+      text-align: center;
+    }
+
+    footer .footer_container {
+      background-color: black;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 100px;
+    }
+
+    .fot_col ul {
+      list-style: none;
+    }
+
+    .fot_col h3 {
+      color: white;
+      margin-bottom: 25px;
+      font-size: 22px;
+      position: relative;
+      text-align: center;
+    }
+
+    .section2 .title {
+      text-align: center;
+      margin: 100px auto 50px;
+    }
+
+    .section2 .profile-box {
+      /* border: 2px soild white; */
+      width: 275px;
+      height: 290px;
+      background: #ffffff;
+      border-radius: 10px;
+      margin-bottom: 100px;
+      box-shadow: 0 10px 10px 10px rgba(42, 50, 56, 0.1);
+      padding: 70px;
+      position: relative;
+      transition: background 0.5s;
+    }
+
+    .section2 .profile-box img {
+      width: 168px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      border-radius: 10px;
+      transition: 0.5s;
+    }
+
+    .section2 .profile-box h3 {
+      margin-top: 25px;
+      margin-bottom: 5px;
+      color: black;
+    }
+    small {
+      color: rgb(0, 0, 0);
+    }
+
+    .social-box {
+      background: #000000;
+      margin: 55px auto 22px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .social-box .fa-brands {
+      margin: 5px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .profile-box p {
+      text-align: center;
+      line-height: 24px;
+      color: #555;
+    }
+
+    .section2 .team-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: auto;
+      width: 85%;
+    }
+    .profile-box img:hover {
+      width: 385px;
+    }
+    .profile-box:hover {
+      background: #2c2c2c;
+    }
+
+    .profile-box:hover h3 {
+      color: #cdc2c2;
+    }
+
+    .profile-box:hover p {
+      color: #cdc2c2;
+    }
+
+    .profile-box:hover small {
+      color: #cdc2c2;
+    }
+
+    .profile-box:hover .social-box {
+      background: #ffffff;
+    }
+    .profile-box:hover .social-box .fa-brands {
+      color: #000000;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo  -->
+      <div class="left">
+        <img src="img/download.png" alt="" />
+        <div>Body Benders</div>
+      </div>
+      <!-- centre box for  navbar -->
+      <div class="centre">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#Trainers">Trainers</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">Login</button>
+      </div>
+    </header>
+    <main>
+      <section class="section1">
+        <div class="container">
+          <h2>Join Body Benders</h2>
+          <form action="noaction.php">
+            <div class="form-group">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter Your First Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name=""
+                id=""
+                autocomplete="off"
+                placeholder="Enter Your Last Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name=""
+                id=""
+                autocomplete="off"
+                placeholder="Enter E-mail"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                name=""
+                id=""
+                autocomplete="off"
+                placeholder="Enter Phone No."
+              />
+            </div>
+            <button class="btn">Submit</button>
+          </form>
+        </div>
+      </section>
+      <section class="section2" id="Trainers">
+        <div class="title">
+          <h1>Our Trainers</h1>
+          <p>
+            "Unlock Your Full Fitness Potential with Our Expert Gym Trainers"
+          </p>
+        </div>
+        <div class="team-row">
+          <div class="profile-box">
+            <h3>XYZ</h3>
+            <small>Senior Fitness Trainer </small>
+            <img src="img/trainer1.jpg" alt="" />
+            <div class="social-box">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              voluptas esse tempora odio non vero! Asperiores eos optio
+              laboriosam sunt?
+            </p>
+          </div>
+
+          <div class="profile-box">
+            <h3>XYZ</h3>
+            <small>Powerlifting Coach </small>
+            <img src="img/trainer1.jpg" alt="" />
+            <div class="social-box">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium modi cumque fugit cum reprehenderit! Fugit nam
+              pariatur dolore. Beatae, voluptatem!
+            </p>
+          </div>
+
+          <div class="profile-box">
+            <h3>XYZ</h3>
+            <small>Nutrition Coach </small>
+            <img src="img/trainer1.jpg" alt="" />
+            <div class="social-box">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, odit
+              quibusdam! Sequi, illo corrupti saepe dolore ducimus aperiam quos?
+              Quia?
+            </p>
+          </div>
+
+          <div class="profile-box">
+            <h3>XYZ</h3>
+            <small>Personal Trainer </small>
+            <img src="img/trainer1.jpg" alt="" />
+            <div class="social-box">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              amet aut fugit beatae aliquam iusto! Natus incidunt accusantium
+              aut repellendus.
+            </p>
+          </div>
+
+          <div class="profile-box">
+            <h3>XYZ</h3>
+            <small>CrossFit Coach </small>
+            <img src="img/trainer1.jpg" alt="" />
+            <div class="social-box">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+              assumenda autem repudiandae sint quis error magnam quasi vero nemo
+              optio.
+            </p>
+          </div>
+
+          <div class="profile-box">
+            <h3>XYZ</h3>
+            <small>Cardiovascular Trainer </small>
+            <img src="img/trainer1.jpg" alt="" />
+            <div class="social-box">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              dolorem aliquid voluptates odit doloremque error recusandae?
+              Distinctio magni ea vero?
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <div class="row">
+          <div class="fot_col">
+            <h3>Services</h3>
+            <ul>
+              <li>Calesthenics</li>
+              <li>Weight Traing</li>
+              <li>Diet Plan</li>
+              <li>Zumba</li>
+            </ul>
+          </div>
+          <div class="fot_col">
+            <h3>Company</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="fot_col">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i> : 888-999-888</li>
+              <li>
+                <i class="fa-regular fa-envelope"></i> : bodybenders@gmail.com
+              </li>
+              <li><i class="fa-brands fa-instagram"></i> : body_benders</li>
+              <li><i class="fa-brands fa-facebook"></i> : body_benders123</li>
+            </ul>
+          </div>
+          <div class="fot_col">
+            <h3>Address</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> : 40, Krishna Nagar
+                <br />Indore, Chhattisgarh <br />Pin Code:202467
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
